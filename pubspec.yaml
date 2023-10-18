@@ -79,7 +79,7 @@ flutter:
 flutter_icons:
   android: true
   ios: true
-  image_path: "imagens/imagens_icons/minhaLogo2.png"
+  image_path: "imagens/imagens_oxesushi/logo.png"
   remove_alpha_ios: true
 
     

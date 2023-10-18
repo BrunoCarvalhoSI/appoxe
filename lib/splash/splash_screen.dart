@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:oxesushi_v1/componentes/custom_colors.dart';
-import 'package:oxesushi_v1/screens/base/tela_base.dart';
-import 'package:oxesushi_v1/screens/base/tela_home_tab.dart';
 import 'package:oxesushi_v1/screens/tela_login.dart';
 import 'package:oxesushi_v1/widgets/widget_app_name.dart';
 
@@ -34,9 +32,9 @@ class _SplashScreenState extends State<SplashScreen> {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              CustomColors.colorAppVermelho.shade800,
-              CustomColors.colorAppVermelho.shade500,
-              CustomColors.colorAppVermelho.shade200,
+              Colors.white,
+              Colors.grey.shade500,
+              Colors.grey.shade900,
             ],
           ),
         ),

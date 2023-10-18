@@ -35,7 +35,7 @@ class _TelaHomeState extends State<TelaHome> {
     // TODO: implement initState
     super.initState();
     Future.delayed(
-      const Duration(seconds: 3),
+      const Duration(seconds: 2),
       () {
         setState(() {
           isLoading = false;
