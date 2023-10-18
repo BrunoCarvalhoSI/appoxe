@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../screens/tela_login.dart';
 import 'componentes/custom_colors.dart';
+import 'splash/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +22,9 @@ class MyApp extends StatelessWidget {
         ),
         scaffoldBackgroundColor: Colors.black,
       ),
-      home: Login(),
+      home: const SplashScreen(
+
+      ),
     );
   }
 }
