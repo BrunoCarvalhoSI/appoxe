@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import '../screens/tela_login.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:oxesushi_v1/pages_routes/app_pages.dart';
+import '../screens/screen_signIn.dart';
 import 'componentes/custom_colors.dart';
 import 'splash/splash_screen.dart';
 
@@ -13,18 +15,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
+    return GetMaterialApp(
       title: 'Ôxe Sushi',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch(
-          primarySwatch: CustomColors.colorAppTema,
-        ),
+        primarySwatch: CustomColors.colorAppTema,
         scaffoldBackgroundColor: Colors.black,
       ),
-      home: const SplashScreen(
-
-      ),
+      debugShowCheckedModeBanner: false,
+      initialRoute: PagesRoutes.splashRoute,
+      getPages: AppPages.pages,
     );
   }
 }

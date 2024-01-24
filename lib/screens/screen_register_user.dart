@@ -4,8 +4,8 @@ import 'package:oxesushi_v1/componentes/custom_colors.dart';
 
 import '../widgets/custom_text_field.dart';
 
-class TelaCadastroUsuario extends StatelessWidget {
-  TelaCadastroUsuario({Key? key}) : super(key: key);
+class ScreenRegisterUser extends StatelessWidget {
+  ScreenRegisterUser({Key? key}) : super(key: key);
 
   final cpfFormatter = MaskTextInputFormatter(
     mask: '###.###.###-##',

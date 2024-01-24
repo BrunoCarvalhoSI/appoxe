@@ -8,14 +8,14 @@ import '../../componentes/custom_colors.dart';
 import '../../config/mock_dados.dart' as mockDados;
 import 'componentes/tile_categoria.dart';
 
-class TelaHome extends StatefulWidget {
-  const TelaHome({Key? key}) : super(key: key);
+class ScreenHome extends StatefulWidget {
+  const ScreenHome({Key? key}) : super(key: key);
 
   @override
-  State<TelaHome> createState() => _TelaHomeState();
+  State<ScreenHome> createState() => _ScreenHomeState();
 }
 
-class _TelaHomeState extends State<TelaHome> {
+class _ScreenHomeState extends State<ScreenHome> {
   String categoriaSelecionada = 'Cru';
 
   GlobalKey<CartIconKey> globalKeyCartItems = GlobalKey<CartIconKey>();
@@ -158,8 +158,7 @@ class _TelaHomeState extends State<TelaHome> {
                             });
                           },
                           categoria: mockDados.categorias[index],
-                          isSelected: mockDados.categorias[index] ==
-                              categoriaSelecionada,
+                          isSelected: mockDados.categorias[index] == categoriaSelecionada,
                         );
                       },
                       separatorBuilder: (context, index) =>

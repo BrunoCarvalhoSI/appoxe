@@ -1,7 +1,7 @@
 // ignore: implementation_imports
 import 'package:flutter/material.dart';
-import 'base/tela_base.dart';
-import '../screens/tela_cadastro_usuario.dart';
+import 'package:get/get.dart';
+import '../pages_routes/app_pages.dart';
 import '../componentes/custom_colors.dart';
 import '../widgets/custom_text_field.dart';
 
@@ -78,7 +78,8 @@ class _LoginState extends State<Login> {
                           fontSize: 25,
                           color: Colors.white,
                         ),
-                      ), onPressed: () {  },
+                      ),
+                      onPressed: () {},
                     ),
                   ),
                 ),
@@ -120,13 +121,7 @@ class _LoginState extends State<Login> {
                           ),
                         ),
                         onPressed: () {
-                          Navigator.of(context).pushReplacement(
-                            MaterialPageRoute(
-                              builder: (c) {
-                                return const TelaBase();
-                              },
-                            ),
-                          );
+                          Get.offNamed(PagesRoutes.homeRoute);
                         },
                         child: const Text(
                           "Entrar",
@@ -181,28 +176,23 @@ class _LoginState extends State<Login> {
                     SizedBox(
                       height: 50,
                       child: OutlinedButton(
-                          style: OutlinedButton.styleFrom(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                            side: BorderSide(
-                              width: 2,
-                              color: CustomColors.colorAppTema,
-                            ),
+                        style: OutlinedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
                           ),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (BuildContext context) =>
-                                    TelaCadastroUsuario(),
-                              ),
-                            );
-                          },
-                          child: const Text(
-                            "Criar Conta",
-                            style: TextStyle(fontSize: 18),
-                          )),
+                          side: BorderSide(
+                            width: 2,
+                            color: CustomColors.colorAppTema,
+                          ),
+                        ),
+                        onPressed: () {
+                          Get.toNamed(PagesRoutes.registerUserRoute);
+                        },
+                        child: const Text(
+                          "Criar Conta",
+                          style: TextStyle(fontSize: 18),
+                        ),
+                      ),
                     )
                   ],
                 ),

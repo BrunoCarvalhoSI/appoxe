@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
 
 import '../../componentes/custom_colors.dart';
-import '../carrinho/tela_carrinho_tab.dart';
-import '../base/tela_home_tab.dart';
+import '../carrinho/screen_cart_tab.dart';
 import '../pedidos/tela_pedidos_tab.dart';
 import '../perfil/tela_perfil_tab.dart';
 
-class TelaBase extends StatefulWidget {
-  const TelaBase({Key? key}) : super(key: key);
+class ScreenBase extends StatefulWidget {
+  const ScreenBase({Key? key}) : super(key: key);
 
   @override
-  State<TelaBase> createState() => _TelaBaseState();
+  State<ScreenBase> createState() => _ScreenBaseState();
 }
 
-class _TelaBaseState extends State<TelaBase> {
+class _ScreenBaseState extends State<ScreenBase> {
   int currentIndex = 0;
   final pageControler = PageController();
 
@@ -24,8 +23,8 @@ class _TelaBaseState extends State<TelaBase> {
         physics: const NeverScrollableScrollPhysics(),
         controller: pageControler,
         children: [
-          const TelaHome(),
-          TelaCarrinho(),
+          const ScreenBase(),
+          ScreenCart(),
           const TelaPedidos(),
           const TelaPerfil(),
         ],

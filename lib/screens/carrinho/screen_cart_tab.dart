@@ -1,27 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:oxesushi_v1/componentes/custom_colors.dart';
 import 'package:oxesushi_v1/config/mock_dados.dart' as mock;
-import 'package:oxesushi_v1/screens/carrinho/componentes/tile_carrinho.dart';
+import 'package:oxesushi_v1/screens/carrinho/componentes/tile_cart.dart';
 import 'package:oxesushi_v1/services/utils_services.dart';
 
 import '../../models/ModelItemCarrinho.dart';
 import '../../widgets/payment_dialog.dart';
 
-class TelaCarrinho extends StatefulWidget {
-  TelaCarrinho({Key? key}) : super(key: key);
+class ScreenCart extends StatefulWidget {
+  ScreenCart({Key? key}) : super(key: key);
   final UtilsServices utilsServices = UtilsServices();
 
   @override
-  State<TelaCarrinho> createState() => _TelaCarrinhoState();
+  State<ScreenCart> createState() => _ScreenCartState();
 }
 
-class _TelaCarrinhoState extends State<TelaCarrinho> {
+class _ScreenCartState extends State<ScreenCart> {
   final UtilsServices utilsServices = UtilsServices();
 
-  void removerItemCarrinho(ModelItemCarrinho itemCarrinho) {
+  void removerItemCarrinho(ModelItemCarrinho cartItem) {
     setState(() {
-      mock.itensCarrinho.remove(itemCarrinho);
-      utilsServices.showToast(message: '${itemCarrinho.item.nome} removido do carrinho ');
+      mock.itensCarrinho.remove(cartItem);
+      utilsServices.showToast(message: '${cartItem.item.nome} removido do carrinho ');
 
     });
   }

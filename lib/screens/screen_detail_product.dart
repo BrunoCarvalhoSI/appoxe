@@ -4,19 +4,19 @@ import 'package:oxesushi_v1/widgets/widget_quantidade.dart';
 import '../componentes/custom_colors.dart';
 import '../models/ModelProduto.dart';
 
-class DetalhesDoProduto extends StatefulWidget {
+class ScreenDetailProduct extends StatefulWidget {
   final ModelProduto produto;
 
-  const DetalhesDoProduto({
+  const ScreenDetailProduct({
     Key? key,
     required this.produto,
   }) : super(key: key);
 
   @override
-  State<DetalhesDoProduto> createState() => _DetalhesDoProdutoState();
+  State<ScreenDetailProduct> createState() => _ScreenDetailProductState();
 }
 
-class _DetalhesDoProdutoState extends State<DetalhesDoProduto> {
+class _ScreenDetailProductState extends State<ScreenDetailProduct> {
   final UtilsServices utilsServices = UtilsServices();
 
   int qtdDoCarrinho = 1;

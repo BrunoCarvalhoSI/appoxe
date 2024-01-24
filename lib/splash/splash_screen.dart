@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:oxesushi_v1/componentes/custom_colors.dart';
-import 'package:oxesushi_v1/screens/tela_login.dart';
+import 'package:get/get.dart';
+import 'package:oxesushi_v1/pages_routes/app_pages.dart';
 import 'package:oxesushi_v1/widgets/widget_app_name.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -16,11 +16,11 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
     Future.delayed(const Duration(seconds: 2), () {
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) {
-        return const Login();
-      }));
+      Get.offNamed(PagesRoutes.loginRoute);
     });
   }
+
+
 
   @override
   Widget build(BuildContext context) {

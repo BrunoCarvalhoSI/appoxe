@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../componentes/custom_colors.dart';
 import '../../../models/ModelProduto.dart';
 import '../../../services/utils_services.dart';
-import '../../tela_detalhes_produto.dart';
+import '../../screen_detail_product.dart';
 
 class ProdutoTile extends StatefulWidget {
   final ModelProduto produto;
@@ -40,7 +40,7 @@ class _ProdutoTileState extends State<ProdutoTile> {
           onTap: () {
             Navigator.of(context).push(MaterialPageRoute(
               builder: (c) {
-                return DetalhesDoProduto(
+                return ScreenDetailProduct(
                   produto: widget.produto,
                 );
               },
