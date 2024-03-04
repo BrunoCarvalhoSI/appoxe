@@ -22,10 +22,7 @@ class CategoriaTile extends StatelessWidget {
         borderRadius: BorderRadius.circular(30),
         onTap: onPressed,
         child: Container(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 6,
-            vertical: 4
-          ),
+          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 4),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             color: isSelected ? Colors.white : Colors.transparent,

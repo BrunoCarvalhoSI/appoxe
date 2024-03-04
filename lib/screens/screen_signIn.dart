@@ -145,11 +145,8 @@ class Login extends StatelessWidget {
                             if(_formKey.currentState!.validate()){
                                 print('Todos os campos estao validos');
                             }else{
-                              print('Campos invalidos'
-                                  '');
+                              print('Campos invalidos');
                             }
-
-
                           },
                           child: const Text(
                             "Entrar",
