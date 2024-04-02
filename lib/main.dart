@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:get/get.dart';
 import 'package:oxesushi_v1/pages_routes/app_pages.dart';
+import 'package:oxesushi_v1/screens/auth/controller/auth_controller.dart';
 import 'componentes/custom_colors.dart';
 
 void main() {
+  Get.put(AuthController());
+
   runApp(const MyApp());
 }
 

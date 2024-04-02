@@ -4,7 +4,7 @@ import 'package:oxesushi_v1/screens/base/screen_home_tab.dart';
 import 'package:oxesushi_v1/splash/splash_screen.dart';
 
 import '../screens/screen_register_user.dart';
-import '../screens/screen_signIn.dart';
+import '../screens/auth/screen_sign_in.dart';
 
 abstract class AppPages {
   static final pages = <GetPage>[

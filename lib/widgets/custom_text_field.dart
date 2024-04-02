@@ -11,6 +11,8 @@ class CustomTextField extends StatefulWidget {
   final TextInputType keyboardType; // Nova propriedade
   final String? Function(String?)? validator;
 
+  final TextEditingController ? controller;
+
   const CustomTextField({
     Key? key,
     required this.icon,
@@ -20,7 +22,8 @@ class CustomTextField extends StatefulWidget {
     this.textoInicial,
     this.readOnly = false,
     this.keyboardType = TextInputType.text,
-    this.validator// Nova propriedade retirada do teclado somente numeros
+    this.validator,// Nova propriedade retirada do teclado somente numeros
+    this.controller,
   }) : super(key: key);
 
   @override
@@ -42,6 +45,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
     return Padding(
       padding: const EdgeInsets.only(bottom: 15),
       child: TextFormField(
+        controller: widget.controller,
         readOnly: widget.readOnly,
         initialValue: widget.textoInicial,
         obscureText: isObscure,

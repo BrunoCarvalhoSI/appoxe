@@ -17,7 +17,7 @@ const Map<int, Color> _swathRedOpacity = {
   100: Color.fromRGBO(216, 62, 59, .2),
   200: Color.fromRGBO(216, 62, 59, .3),
   300: Color.fromRGBO(216, 62, 59, .4),
-  4000: Color.fromRGBO(216, 62, 59, .5),
+  400: Color.fromRGBO(216, 62, 59, .5),
   500: Color.fromRGBO(216, 62, 59, .6),
   600: Color.fromRGBO(216, 62, 59, .7),
   700: Color.fromRGBO(216, 62, 59, .8),

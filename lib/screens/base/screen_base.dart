@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../componentes/custom_colors.dart';
 import '../carrinho/screen_cart_tab.dart';
 import '../pedidos/tela_pedidos_tab.dart';
-import '../perfil/tela_perfil_tab.dart';
+import '../perfil/screen_perfil_tab.dart';
 
 class ScreenBase extends StatefulWidget {
   const ScreenBase({Key? key}) : super(key: key);
