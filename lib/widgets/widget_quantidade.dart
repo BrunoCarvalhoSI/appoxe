@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:oxesushi_v1/componentes/custom_colors.dart';
+import '../src/componentes/custom_colors.dart';
 
 class WidgetQuantidade extends StatelessWidget {
   final int value;

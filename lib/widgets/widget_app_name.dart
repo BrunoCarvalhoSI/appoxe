@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../componentes/custom_colors.dart';
+import '../src/componentes/custom_colors.dart';
 
 class AppNameWidget extends StatelessWidget {
 

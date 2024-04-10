@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '/componentes/custom_colors.dart';
+import '../src/componentes/custom_colors.dart';
 
 class StatusPedidoWidget extends StatelessWidget {
   final String statusPedido;
