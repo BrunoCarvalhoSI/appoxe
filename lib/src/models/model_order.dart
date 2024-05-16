@@ -1,5 +1,5 @@
 // ignore: file_names
-import 'ModelItemCarrinho.dart';
+import 'model_cart_item.dart';
 
 class ModelPedido {
   String id;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '/src/componentes/custom_colors.dart';
-import '/src/models/ModelItemCarrinho.dart';
+import '/src/models/model_cart_item.dart';
 import '/src/services/utils_services.dart';
 import 'package:oxesushi_v1/widgets/widget_quantidade.dart';
 

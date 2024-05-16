@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/ModelPedidos.dart';
+import '../models/model_order.dart';
 import '../services/utils_services.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 

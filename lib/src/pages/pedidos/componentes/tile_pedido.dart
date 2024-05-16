@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import '/src/componentes/custom_colors.dart';
-import '/src/models/ModelPedidos.dart';
+import '/src/models/model_order.dart';
 import '/src/componentes/payment_dialog.dart';
 import 'package:oxesushi_v1/widgets/widget_pedido_status.dart';
 import '/src/services/utils_services.dart';
 
-import '../../../models/ModelItemCarrinho.dart';
+import '../../../models/model_cart_item.dart';
 
 class PedidoTile extends StatelessWidget {
   final ModelPedido pedido;

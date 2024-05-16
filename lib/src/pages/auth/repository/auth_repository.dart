@@ -1,10 +1,15 @@
 import 'package:oxesushi_v1/src/constants/endpoints.dart';
+import 'package:oxesushi_v1/src/models/user_model.dart';
+import 'package:oxesushi_v1/src/pages/auth/repository/auth_errors.dart'
+    as authErrors;
+import 'package:oxesushi_v1/src/pages/auth/result/auth_result.dart';
 import 'package:oxesushi_v1/src/services/http_manager.dart';
 
 class AuthRespositoy {
   final HttpManager _httpManager = HttpManager();
 
-  Future signIn({required String email, required String password}) async {
+  Future<AuthResult> signIn(
+      {required String email, required String password}) async {
     final result = await _httpManager.restRequest(
       url: Endpoints.signin,
       method: HttpMethods.post,
@@ -15,9 +20,10 @@ class AuthRespositoy {
     );
 
     if (result['result'] != null) {
-      print('funcionou');
-    }else{
-      print(result['error']);
+      final user = UserModel.fromJson(result['result']);
+      return AuthResult.success(user);
+    } else {
+      return AuthResult.error(authErrors.authErrorsString(result['error']));
     }
   }
 }

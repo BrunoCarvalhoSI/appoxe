@@ -3,7 +3,7 @@ import '/src/componentes/custom_colors.dart';
 import '/src/config/mock_dados.dart' as mock;
 import '/src/services/utils_services.dart';
 
-import '../../models/ModelItemCarrinho.dart';
+import '../../models/model_cart_item.dart';
 import '../../componentes/payment_dialog.dart';
 import 'componentes/tile_cart.dart';
 

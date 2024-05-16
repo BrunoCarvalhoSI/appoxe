@@ -10,8 +10,9 @@ abstract class AppPages {
     GetPage(page: () => const SplashScreen(), name: PagesRoutes.splashRoute),
     GetPage(page: () => const ScreenHome(), name: PagesRoutes.homeRoute),
     GetPage(page: () => const ScreenBase(), name: PagesRoutes.baseRoute),
-    GetPage(page: () =>  Login(), name: PagesRoutes.loginRoute),
-    GetPage(page: () => ScreenRegisterUser(), name: PagesRoutes.registerUserRoute)
+    GetPage(page: () => Login(), name: PagesRoutes.loginRoute),
+    GetPage(
+        page: () => ScreenRegisterUser(), name: PagesRoutes.registerUserRoute)
   ];
 }
 

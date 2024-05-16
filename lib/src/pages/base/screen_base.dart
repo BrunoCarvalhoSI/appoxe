@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:oxesushi_v1/src/pages/base/screen_home_tab.dart';
 
 import '../../componentes/custom_colors.dart';
 import '../carrinho/screen_cart_tab.dart';
@@ -23,7 +24,7 @@ class _ScreenBaseState extends State<ScreenBase> {
         physics: const NeverScrollableScrollPhysics(),
         controller: pageControler,
         children: [
-          const ScreenBase(),
+          const ScreenHome(),
           ScreenCart(),
           const TelaPedidos(),
           const TelaPerfil(),

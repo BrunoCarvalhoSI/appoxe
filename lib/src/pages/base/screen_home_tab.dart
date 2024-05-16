@@ -92,6 +92,7 @@ class _ScreenHomeState extends State<ScreenHome> {
                 key: globalKeyCartItems,
                 icon: const Icon(
                   Icons.shopping_cart,
+                  color: Colors.white,
                 ),
               ),
             ),
@@ -158,7 +159,8 @@ class _ScreenHomeState extends State<ScreenHome> {
                             });
                           },
                           categoria: mockDados.categorias[index],
-                          isSelected: mockDados.categorias[index] == categoriaSelecionada,
+                          isSelected: mockDados.categorias[index] ==
+                              categoriaSelecionada,
                         );
                       },
                       separatorBuilder: (context, index) =>
@@ -167,7 +169,6 @@ class _ScreenHomeState extends State<ScreenHome> {
                     )
                   : ListView(
                       scrollDirection: Axis.horizontal,
-
                       children: List.generate(
                         6,
                         (index) => Container(

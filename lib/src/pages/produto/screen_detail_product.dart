@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '/src/services/utils_services.dart';
 import 'package:oxesushi_v1/widgets/widget_quantidade.dart';
 import '../../componentes/custom_colors.dart';
-import '../../models/ModelProduto.dart';
+import '../../models/model_product.dart';
 
 class ScreenDetailProduct extends StatefulWidget {
   final ModelProduto produto;
@@ -126,6 +126,7 @@ class _ScreenDetailProductState extends State<ScreenDetailProduct> {
                           label: const Text(
                             "Adicionar ao carrinho",
                             style: TextStyle(
+                              color: Colors.white,
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),

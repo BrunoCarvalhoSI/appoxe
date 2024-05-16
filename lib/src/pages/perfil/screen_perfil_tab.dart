@@ -32,25 +32,25 @@ class _TelaPerfilState extends State<TelaPerfil> {
         children: [
           CustomTextField(
             readOnly: true,
-            textoInicial: mock.usuario.email,
+            textoInicial: mock.user.email,
             icon: Icons.email,
             label: "Email",
           ),
           CustomTextField(
             readOnly: true,
-            textoInicial: mock.usuario.nome,
+            textoInicial: mock.user.name,
             icon: Icons.person,
             label: "Nome",
           ),
           CustomTextField(
             readOnly: true,
-            textoInicial: mock.usuario.celular,
+            textoInicial: mock.user.phone,
             icon: Icons.phone,
             label: "Celular",
           ),
           CustomTextField(
             readOnly: true,
-            textoInicial: mock.usuario.cpf,
+            textoInicial: mock.user.cpf,
             icon: Icons.copy,
             label: "CPF",
             isSecret: true,

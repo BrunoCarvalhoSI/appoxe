@@ -1,7 +1,7 @@
-import '../models/ModelPedidos.dart';
-import '../models/ModelUsuario.dart';
-import '../models/ModelItemCarrinho.dart';
-import '../models/ModelProduto.dart';
+import '../models/model_order.dart';
+import '../models/user_model.dart';
+import '../models/model_cart_item.dart';
+import '../models/model_product.dart';
 
 ModelProduto niguiriSalmao = ModelProduto(
   descricao: 'Arroz com fatia de Salmão',
@@ -67,13 +67,12 @@ ModelProduto comboNutella = ModelProduto(
   undMedida: "und",id: '1',
 );
 
-ModelUsuario usuario = ModelUsuario(
-  celular: '79 9 9919-4590',
+UserModel user = UserModel(
+  phone: '79 9 9919-4590',
   cpf: '023.247.305.62',
   email: 'brunocarvalhoifs@gmail.com',
-  nome: 'Bruno Carvalho',
-  senha: "123546",
-  id: '1',
+  name: 'Bruno Carvalho',
+  password: "123546"
 );
 
 List<ModelProduto> listaProdutos = [

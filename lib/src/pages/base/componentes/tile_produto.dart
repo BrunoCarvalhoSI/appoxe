@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../componentes/custom_colors.dart';
-import '../../../models/ModelProduto.dart';
+import '../../../models/model_product.dart';
 import '../../../services/utils_services.dart';
 import '../../produto/screen_detail_product.dart';
 

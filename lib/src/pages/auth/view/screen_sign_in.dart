@@ -150,17 +150,17 @@ class Login extends StatelessWidget {
                               onPressed: authController.isLoading.value
                                   ? null
                                   : () {
-                                FocusScope.of(context).unfocus();
+                                      FocusScope.of(context).unfocus();
 
-                                if (_formKey.currentState!.validate()) {
-                                  String email = emailController.text;
-                                  String password =
-                                      passwordController.text;
+                                      if (_formKey.currentState!.validate()) {
+                                        String email = emailController.text;
+                                        String password =
+                                            passwordController.text;
 
-                                  authController.signIn(
-                                      email: email, password: password);
-                                }
-                              },
+                                        authController.signIn(
+                                            email: email, password: password);
+                                      }
+                                    },
                               child: authController.isLoading.value
                                   ? CircularProgressIndicator(
                                       color: CustomColors.colorAppTema,
