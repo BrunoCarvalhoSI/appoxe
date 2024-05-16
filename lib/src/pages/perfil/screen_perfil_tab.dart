@@ -59,6 +59,7 @@ class _TelaPerfilState extends State<TelaPerfil> {
             height: 50,
             child: OutlinedButton(
               style: OutlinedButton.styleFrom(
+                backgroundColor: CustomColors.colorAppTema,
                 side: BorderSide(
                   color: CustomColors.colorAppTema,
                 ),
@@ -69,7 +70,10 @@ class _TelaPerfilState extends State<TelaPerfil> {
               onPressed: () {
                 atualizarSenha();
               },
-              child: const Text("Atualizar senha"),
+              child: const Text(
+                "Atualizar senha",
+                style: TextStyle(color: Colors.white),
+              ),
             ),
           )
         ],
@@ -110,21 +114,24 @@ class _TelaPerfilState extends State<TelaPerfil> {
                     const CustomTextField(
                       isSecret: true,
                       icon: Icons.lock,
-                      label: 'Senha atual', textoInicial: '',
+                      label: 'Senha atual',
+                      textoInicial: '',
                     ),
 
                     // Nova senha
                     const CustomTextField(
                       isSecret: true,
                       icon: Icons.lock_outline,
-                      label: 'Nova senha', textoInicial: '',
+                      label: 'Nova senha',
+                      textoInicial: '',
                     ),
 
                     // Confirmação nova senha
                     const CustomTextField(
                       isSecret: true,
                       icon: Icons.lock_outline,
-                      label: 'Confirmar nova senha', textoInicial: '',
+                      label: 'Confirmar nova senha',
+                      textoInicial: '',
                     ),
 
                     // Botão de confirmação
@@ -132,12 +139,13 @@ class _TelaPerfilState extends State<TelaPerfil> {
                       height: 45,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
+                          backgroundColor: CustomColors.colorAppTema,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
                           ),
                         ),
                         onPressed: () {},
-                        child: const Text('Atualizar'),
+                        child: const Text('Atualizar',style: TextStyle(color: Colors.white),),
                       ),
                     ),
                   ],

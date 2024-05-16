@@ -60,7 +60,8 @@ class ScreenRegisterUser extends StatelessWidget {
                       children: [
                         const CustomTextField(
                           icon: Icons.email,
-                          label: 'Email', textoInicial: '',
+                          label: 'Email',
+                          textoInicial: 'greengrocertext@gmail.com',
                         ),
                         const CustomTextField(
                           icon: Icons.lock,
@@ -87,16 +88,16 @@ class ScreenRegisterUser extends StatelessWidget {
                           height: 50,
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
+                              backgroundColor: CustomColors.colorAppTema,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(18),
                               ),
                             ),
-                            onPressed: () {
-
-                            },
+                            onPressed: () {},
                             child: const Text(
                               'Cadastrar usuário',
                               style: TextStyle(
+                                color: Colors.white,
                                 fontSize: 18,
                               ),
                             ),
@@ -129,4 +130,3 @@ class ScreenRegisterUser extends StatelessWidget {
     );
   }
 }
-

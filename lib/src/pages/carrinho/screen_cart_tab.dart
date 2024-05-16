@@ -21,8 +21,8 @@ class _ScreenCartState extends State<ScreenCart> {
   void removerItemCarrinho(ModelItemCarrinho cartItem) {
     setState(() {
       mock.itensCarrinho.remove(cartItem);
-      utilsServices.showToast(message: '${cartItem.item.nome} removido do carrinho ');
-
+      utilsServices.showToast(
+          message: '${cartItem.item.nome} removido do carrinho ');
     });
   }
 
@@ -115,13 +115,19 @@ class _ScreenCartState extends State<ScreenCart> {
                             );
                           },
                         );
-                      }else{
-                        utilsServices.showToast(message: 'Pedido não confirmado',isError: true,);
+                      } else {
+                        utilsServices.showToast(
+                          message: 'Pedido não confirmado',
+                          isError: true,
+                        );
                       }
                     },
                     child: const Text(
                       "Concluir pedido",
-                      style: TextStyle(fontSize: 18),
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 )
